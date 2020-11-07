@@ -13,13 +13,15 @@
 
         public AzureBlobStorageService(AzureBlobStorageServiceOptions options)
         {
-            _connectionString = options.ConnectionString;
+            _connectionString = "DefaultEndpointsProtocol=https;AccountName=imagetaggingstorage;AccountKey=anknBcg55WJ2N3+EbR5NVXiYwCYQRET/y05XelX5i1vIhZEupJvZa7BURZ0XRPtv3dpF4b8GmPbrt0NmqHOM5w==;EndpointSuffix=core.windows.net";
+            // options.ConnectionString;
             _containerName = options.ContainerName;
         }
 
         public AzureBlobStorageService(IOptions<AzureBlobStorageServiceOptions> options)
         {
-            _connectionString = options.Value.ConnectionString;
+            _connectionString = "DefaultEndpointsProtocol=https;AccountName=imagetaggingstorage;AccountKey=anknBcg55WJ2N3+EbR5NVXiYwCYQRET/y05XelX5i1vIhZEupJvZa7BURZ0XRPtv3dpF4b8GmPbrt0NmqHOM5w==;EndpointSuffix=core.windows.net";
+            //options.Value.ConnectionString;
             _containerName = options.Value.ContainerName;
         }
 
