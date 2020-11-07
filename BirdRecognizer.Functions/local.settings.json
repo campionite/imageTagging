@@ -1,10 +1,13 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    //"AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=imagetaggingstorage;AccountKey=anknBcg55WJ2N3+EbR5NVXiYwCYQRET/y05XelX5i1vIhZEupJvZa7BURZ0XRPtv3dpF4b8GmPbrt0NmqHOM5w==;EndpointSuffix=core.windows.net",
     "AzureWebJobsDashboard": "UseDevelopmentStorage=true",
-    "PredictionKey": "e6f11b30466e4278a49af434aafe0bef",
-    "PredictionUrl": "https://southcentralus.api.cognitive.microsoft.com/customvision/v2.0/Prediction/b1f38838-5ec3-46ac-b081-31bb896ce8f2/image?iterationId=74c8fe5d-ab24-4683-b174-95a4b03e7685",
-    "ContainerName": "birds"
+    "PredictionKey": "af5a9a9e832e4ec4b964bea4bfc70a25",
+    //"e6f11b30466e4278a49af434aafe0bef",
+    "PredictionUrl": "https://eastus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/83e95659-edce-42ee-879e-8d2659bb870d/classify/iterations/Iteration1/url",
+    //"https://southcentralus.api.cognitive.microsoft.com/customvision/v2.0/Prediction/b1f38838-5ec3-46ac-b081-31bb896ce8f2/image?iterationId=74c8fe5d-ab24-4683-b174-95a4b03e7685",
+    "ContainerName": "clothes"
   }
 }
