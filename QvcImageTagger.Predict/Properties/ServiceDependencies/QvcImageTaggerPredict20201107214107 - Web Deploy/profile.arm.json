@@ -21,7 +21,7 @@
     },
     "resourceName": {
       "type": "string",
-      "defaultValue": "QvcImageTaggerApp",
+      "defaultValue": "QvcImageTaggerPredict20201107214107",
       "metadata": {
         "description": "Name of the main resource to be created by this template."
       }

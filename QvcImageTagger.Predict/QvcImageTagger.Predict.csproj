@@ -12,13 +12,14 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
   </ItemGroup>
 
+ 
+
   <ItemGroup>
-    <None Include="..\..\..\BirdRecognizer-master %25281%2529\BirdRecognizer-master\BirdRecognizer.Predict\wwwroot\images\download.png" />
+	  <ProjectReference Include="..\QvcImageTagger.Common\QvcImageTagger.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BirdRecognizer.Common\QvcImageTagger.Common.csproj" />
-    <ProjectReference Include="..\QvcImageTagger.Common\QvcImageTagger.Common.csproj" />
+    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
 </Project>
