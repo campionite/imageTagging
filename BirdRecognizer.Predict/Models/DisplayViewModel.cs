@@ -1,8 +1,8 @@
-﻿namespace BirdRecognizer.Predict.Models
-{
-    using System.Collections.Generic;
-    using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 
+namespace QvcImageTagger.Predict.Models
+{
     public class DisplayViewModel
     {
         public string ImageUrl { get; set; }

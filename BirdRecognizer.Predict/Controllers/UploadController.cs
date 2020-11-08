@@ -1,12 +1,12 @@
-﻿namespace BirdRecognizer.Predict.Controllers
-{
-    using System;
-    using System.IO;
-    using System.Threading.Tasks;
-    using BirdRecognizer.Common.Services;
-    using BirdRecognizer.Predict.Models;
-    using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.IO;
+using System.Threading.Tasks;
+using QvcImageTagger.Predict.Models;
+using Microsoft.AspNetCore.Mvc;
+using QvcImageTagger.Common.Services;
 
+namespace QvcImageTagger.Predict.Controllers
+{
     [AutoValidateAntiforgeryToken]
     public class UploadController : Controller
     {

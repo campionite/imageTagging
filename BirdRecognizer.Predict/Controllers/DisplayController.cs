@@ -1,16 +1,15 @@
-﻿namespace BirdRecognizer.Predict.Controllers
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using BirdRecognizer.Common;
-    using BirdRecognizer.Common.Services;
-    using BirdRecognizer.Predict.Models;
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.Extensions.Configuration;
-    using Newtonsoft.Json;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
+using QvcImageTagger.Common;
+using QvcImageTagger.Common.Services;
+using QvcImageTagger.Predict.Models;
 
+namespace QvcImageTagger.Predict.Controllers
+{
     public class DisplayController : Controller
     {
         private readonly IConfiguration _configuration;

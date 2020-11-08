@@ -1,8 +1,8 @@
-﻿namespace BirdRecognizer.Common.Services
-{
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
+namespace QvcImageTagger.Common.Services
+{
     public interface IStorageService
     {
         Task UploadFileAsync(string fileName, byte[] bytes, string contentType);

@@ -1,16 +1,17 @@
-namespace BirdRecognizer.Functions
-{
-    using System;
-    using System.Collections.Generic;
-    using System.IO;
-    using System.Linq;
-    using System.Net.Http;
-    using System.Net.Http.Headers;
-    using System.Threading.Tasks;
-    using BirdRecognizer.Common.Services;
-    using Microsoft.Azure.WebJobs;
-    using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
+using Microsoft.Azure.WebJobs;
+using Newtonsoft.Json;
+using QvcImageTagger.Common;
+using QvcImageTagger.Common.Services;
 
+namespace QvcImageTagger.Functions
+{
     public static class ClassifyImage
     {
         [FunctionName("ClassifyImage")]
@@ -45,39 +46,10 @@ namespace BirdRecognizer.Functions
         private static async Task<bool> AlreadyProcessed(IStorageService storageService, string name)
         {
             var metadata = await storageService.GetMetadataFromFileAsync(name);
-            return metadata[Common.Constants.ImageMetadataKeys.ClassificationStatus] 
-                != Common.ImageClassificationStatus.Pending.ToString();
+            return metadata[Constants.ImageMetadataKeys.ClassificationStatus] 
+                != ImageClassificationStatus.Pending.ToString();
         }
 
-        private static async Task<PredictionResponse> GetPredictionResponse_New(Stream blob)
-        {
-            byte[] byteData = GetImageAsByteArrayLocal(@"D:\Hackathon\images\test\hello.jpg");
-            using (var client = new HttpClient())
-            {
-                var url = "https://eastus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/83e95659-edce-42ee-879e-8d2659bb870d/classify/iterations/Iteration1/image";
-
-                client.BaseAddress = new Uri(url);
-                client.DefaultRequestHeaders.Add("Prediction-Key",
-                "af5a9a9e832e4ec4b964bea4bfc70a25");
-                client.DefaultRequestHeaders
-                        .Accept
-                        .Add(new MediaTypeWithQualityHeaderValue("application/octet-stream"));
-                using (var request = new HttpRequestMessage(HttpMethod.Post, client.BaseAddress))
-                {
-                    request.Content = new ByteArrayContent(byteData);
-                    request.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
-
-                    var response = await client.PostAsync(request.RequestUri, request.Content);
-                    var responseString = await response.Content.ReadAsStringAsync();
-                    return JsonConvert.DeserializeObject<PredictionResponse>(responseString);
-                }
-            }
-
-
-
-
-            
-        }
 
         private static async Task<PredictionResponse> GetPredictionResponse(Stream blob)
         {
@@ -133,11 +105,11 @@ namespace BirdRecognizer.Functions
             return new Dictionary<string, string>
                 {
                     {
-                        Common.Constants.ImageMetadataKeys.ClassificationStatus,
-                        Common.ImageClassificationStatus.Completed.ToString()
+                        Constants.ImageMetadataKeys.ClassificationStatus,
+                        ImageClassificationStatus.Completed.ToString()
                     },
                     {
-                        Common.Constants.ImageMetadataKeys.PredictionDetail,
+                        Constants.ImageMetadataKeys.PredictionDetail,
                         GetMetaDataFromPrediction(response)
                     }
                 };

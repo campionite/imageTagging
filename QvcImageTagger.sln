@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2026
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirdRecognizer.Predict", "BirdRecognizer.Predict\BirdRecognizer.Predict.csproj", "{B390156A-45B5-4370-90E2-6AAC94DED539}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QvcImageTagger.Predict", "BirdRecognizer.Predict\QvcImageTagger.Predict.csproj", "{B390156A-45B5-4370-90E2-6AAC94DED539}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirdRecognizer.Functions", "BirdRecognizer.Functions\BirdRecognizer.Functions.csproj", "{E51AC281-04DC-4656-9677-4B4450A91D0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QvcImageTagger.Functions", "BirdRecognizer.Functions\QvcImageTagger.Functions.csproj", "{E51AC281-04DC-4656-9677-4B4450A91D0F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirdRecognizer.Common", "BirdRecognizer.Common\BirdRecognizer.Common.csproj", "{2C367C5D-9425-4D45-8BBD-EFF1A3D8E20A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QvcImageTagger.Common", "BirdRecognizer.Common\QvcImageTagger.Common.csproj", "{2C367C5D-9425-4D45-8BBD-EFF1A3D8E20A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

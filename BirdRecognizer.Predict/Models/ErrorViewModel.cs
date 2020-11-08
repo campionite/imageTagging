@@ -1,4 +1,4 @@
-namespace BirdRecognizer.Predict.Models
+namespace QvcImageTagger.Predict.Models
 {
     public class ErrorViewModel
     {

@@ -1,10 +1,10 @@
-﻿namespace BirdRecognizer.Predict.Extensions
-{
-    using System;
-    using BirdRecognizer.Common.Services;
-    using Microsoft.Extensions.Configuration;
-    using Microsoft.Extensions.DependencyInjection;
+﻿using System;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using QvcImageTagger.Common.Services;
 
+namespace QvcImageTagger.Predict.Extensions
+{
     public static class AzureBlobStorageServiceCollectionExtensions
     {
         public static IServiceCollection AddStorageService(this IServiceCollection collection, 

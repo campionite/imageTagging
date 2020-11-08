@@ -1,11 +1,11 @@
-﻿namespace BirdRecognizer.Common.Services
-{
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
-    using Microsoft.Extensions.Options;
-    using Microsoft.WindowsAzure.Storage;
-    using Microsoft.WindowsAzure.Storage.Blob;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.Extensions.Options;
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Blob;
 
+namespace QvcImageTagger.Common.Services
+{
     public class AzureBlobStorageService : IStorageService
     {
         private readonly string _connectionString;

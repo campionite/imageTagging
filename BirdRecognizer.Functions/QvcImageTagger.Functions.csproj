@@ -9,7 +9,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BirdRecognizer.Common\BirdRecognizer.Common.csproj" />
+    <ProjectReference Include="..\BirdRecognizer.Common\QvcImageTagger.Common.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">

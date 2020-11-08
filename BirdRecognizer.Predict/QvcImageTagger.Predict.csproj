@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BirdRecognizer.Common\BirdRecognizer.Common.csproj" />
+    <ProjectReference Include="..\BirdRecognizer.Common\QvcImageTagger.Common.csproj" />
   </ItemGroup>
 
 </Project>

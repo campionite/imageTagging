@@ -1,7 +1,7 @@
-﻿namespace BirdRecognizer.Predict.Extensions
-{
-    using System.Linq;
+﻿using System.Linq;
 
+namespace QvcImageTagger.Predict.Extensions
+{
     public static class StringExtensions
     {
         public static string FirstCharToUpper(this string input)

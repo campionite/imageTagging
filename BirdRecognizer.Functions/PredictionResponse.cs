@@ -1,8 +1,8 @@
-﻿namespace BirdRecognizer.Functions
-{
-    using System;
-    using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
+namespace QvcImageTagger.Functions
+{
     /*
         Response as JSON:
         {

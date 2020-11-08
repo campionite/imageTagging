@@ -1,6 +1,7 @@
-﻿namespace BirdRecognizer.Predict
+﻿using QvcImageTagger.Predict.Extensions;
+
+namespace BirdRecognizer.Predict
 {
-    using BirdRecognizer.Predict.Extensions;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.Configuration;

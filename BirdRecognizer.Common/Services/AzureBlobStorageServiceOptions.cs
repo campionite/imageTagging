@@ -1,4 +1,4 @@
-﻿namespace BirdRecognizer.Common.Services
+﻿namespace QvcImageTagger.Common.Services
 {
     public class AzureBlobStorageServiceOptions
     {

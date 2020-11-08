@@ -1,9 +1,9 @@
-﻿namespace BirdRecognizer.Predict.Controllers
+﻿using System.Diagnostics;
+using QvcImageTagger.Predict.Models;
+using Microsoft.AspNetCore.Mvc;
+
+namespace QvcImageTagger.Predict.Controllers
 {
-    using System.Diagnostics;
-    using BirdRecognizer.Predict.Models;
-    using Microsoft.AspNetCore.Mvc;
-    
     public class ErrorController : Controller
     {
         public IActionResult Index()

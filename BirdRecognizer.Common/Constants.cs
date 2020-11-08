@@ -1,4 +1,4 @@
-﻿namespace BirdRecognizer.Common
+﻿namespace QvcImageTagger.Common
 {
     public enum ImageClassificationStatus
     {
