@@ -13,6 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\..\..\BirdRecognizer-master %25281%2529\BirdRecognizer-master\BirdRecognizer.Predict\wwwroot\images\download.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BirdRecognizer.Common\BirdRecognizer.Common.csproj" />
   </ItemGroup>
 

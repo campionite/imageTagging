@@ -33,3 +33,12 @@
         display: none;
     }
 }
+.logo-holder .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.logo-holder img {
+    max-width: 300px;
+    max-height: 38px;
+}

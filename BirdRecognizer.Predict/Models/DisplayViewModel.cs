@@ -29,7 +29,7 @@
                     return $"I'm pretty sure that's a {topPrediction.Tag}";
                 }
 
-                if (topPrediction.Probability > 0.85)
+                if (topPrediction.Probability > 0.70)
                 {
                     return $"Not sure, but I think it might be a {topPrediction.Tag}";
                 }
